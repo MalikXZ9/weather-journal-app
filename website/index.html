@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header-title">Weather Journal App</h1>
+    <section class="input-section">
+      <div class="input-container">
+        <input
+          id="zip"
+          class="input code"
+          type="text"
+          placeholder="Your ZIP Code Here"
+        />
+        <input
+          id="feeling"
+          class="input feel"
+          type="text"
+          placeholder="How are you feeling today? ☁️"
+        />
+        <button class="submit" id="generate">Generate</button>
+      </div>
+    </section>
+
+    <section class="data-section">
+      <div class="data-container" id="entry-holder">
+        <div class="city-container">
+          <h1 class="city">Cairo</h1>
+          <h2 class="date" id="date">Sat Nov 13 2021</h2>
+        </div>
+
+        <div class="temp-container">
+          <h1 class="temp" id="temp">44 C</h1>
+          <h1 class="rain" id="content">rainy</h1>
+        </div>
+      </div>
+      <p class="feel-res">you're feeling:</p>
+    </section>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
